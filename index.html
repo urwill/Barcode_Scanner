@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Barcode Scanner</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <script src="./main.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/@undecaf/zbar-wasm@0.9.15/dist/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@undecaf/barcode-detector-polyfill@0.9.21/dist/index.js"></script>
+    </head>
+    <body>
+        <h1>Barcode Scanner</h1>
+        <div id="controls">
+            <button id="startScan">Scan starten</button>
+            <button id="stopScan" class="hidden">Abbrechen</button>
+        </div>
+        <video id="video" autoplay></video>
+    </body>
+</html>
